@@ -1,0 +1,116 @@
+.bubble:nth-child(1){
+    grid-column-start: 5;
+    grid-row-start: 3;
+    width: 25vw;
+    height: 25vw;
+    transition: 0.3s ease-in-out;
+}
+
+
+.bubble:nth-child(2){
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 20vw;
+    height: 20vw;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+.bubble:nth-child(3){
+    grid-column-start: 7;
+    grid-row-start: 2;
+    width: 15vw;
+    height: 15vw;
+    transition: 0.3s ease-in-out;
+}
+
+.bubble:nth-child(4){
+    grid-column-start:3 ;
+    grid-row-start:4 ;
+    width: 15vw;
+    height: 15vw;
+    transition: 0.3s ease-in-out;
+}
+
+.bubble:nth-child(5){
+    grid-column-start:6 ;
+    grid-row-start: 5;
+    width: 20vw;
+    height: 20vw;
+    transition: 0.3s ease-in-out;
+}
+
+.bubble:nth-child(6){
+    grid-column-start:4 ;
+    grid-row-start: 6;
+    width: 15vw;
+    height: 15vw;
+    transition: 0.3s ease-in-out;
+}
+
+.bubble:nth-child(7){
+    grid-column-start:2 ;
+    grid-row-start: 7;
+    width: 20vw;
+    height: 20vw;
+    transition: 0.3s ease-in-out;
+}
+
+.bubble:nth-child(1):hover{
+    transform: translate(1vw,-5vw);
+}
+
+.bubble:nth-child(1):hover ~ .Loulou{
+    transform: translate(4.5vw,27vw);
+    transition: 0.3s ease-in-out;
+}
+
+.bubble:nth-child(2):hover{
+    transform: translate(-5vw,-5vw);
+}
+
+.bubble:nth-child(2):hover ~ .Greg{
+    transform: translate(18vw,18vw);
+    transition: 0.3s ease-in-out;
+}
+
+.bubble:nth-child(3):hover{
+    transform: translate(-2vw,-5vw);
+}
+
+.bubble:nth-child(3):hover ~ .Flow{
+    transform: translate(7vw,18vw);
+}
+
+.bubble:nth-child(4):hover{
+    transform: translate(5vw,-2vw);
+}
+
+.bubble:nth-child(4):hover ~ .Lenaze{
+    transform: translate(-10vw,10vw);
+}
+
+.bubble:nth-child(5):hover{
+    transform: translate(-1.5vw,7vw);
+}
+
+.bubble:nth-child(5):hover ~ .Oscar{
+    transform: translate(8.5vw,-14vw);
+}
+
+.bubble:nth-child(6):hover{
+    transform: translate(-5vw,5vw);
+}
+
+.bubble:nth-child(6):hover ~ .Lancelot{
+    transform: translate(15vw,-6.25vw);
+}
+
+.bubble:nth-child(7):hover{
+    transform: translate(-5vw,-2vw);
+}
+
+.bubble:nth-child(7):hover ~ .Kylian{
+    transform: translate(20.5vw,9.5vw);
+}

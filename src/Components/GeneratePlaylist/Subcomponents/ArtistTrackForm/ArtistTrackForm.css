@@ -1,0 +1,126 @@
+@media screen and (orientation:landscape) {
+    
+
+
+    .artist-track-container{
+        height: 25vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .artist-track-container>div{
+        width: 40%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .artist-track-container>div>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #4CB5AA;
+        width: 50%;
+        height: 60%;
+        border-radius: 15px;
+    }
+
+    .artist-track-container>div>div>img{
+        width: 30%;
+        max-height: 45%;
+    }
+
+    .artist-track-container>div>div>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 80%;
+        height: 40%;
+    }
+
+    .artist-track-container>div>div>div>img{
+        width: 25%;
+        max-height: 100%;
+    }
+
+    .artist-track-container>div>input{
+        border:#4CB5AA 1px solid;
+        border-radius: 5px;
+        width: 40%;
+        height: 25%;
+        padding: 0 5%;
+        color: var(--textcolor);
+        background-color: transparent;
+    }
+
+    
+
+}
+
+@media screen and (orientation:portrait) {
+    
+    .artist-track-container{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .artist-track-container>div{
+        width: 90%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .artist-track-container>div>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #4CB5AA;
+        width: 80%;
+        height: 60%;
+        border-radius: 10px;
+    }
+
+    .artist-track-container>div>div>img{
+        width: 50%;
+        max-height: 30%;
+    }
+
+    .artist-track-container>div>div>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 80%;
+        height: 45%;
+    }
+
+    .artist-track-container>div>div>div>img{
+        width: 25%;
+        max-height: 100%;
+    }
+
+    .artist-track-container>div>input{
+        border:#4CB5AA 1px solid;
+        border-radius: 5px;
+        width: 70%;
+        height: 25%;
+        padding: 0 5%;
+        color: var(--textcolor);
+        background-color: transparent;
+    }
+    
+
+
+}
+
+

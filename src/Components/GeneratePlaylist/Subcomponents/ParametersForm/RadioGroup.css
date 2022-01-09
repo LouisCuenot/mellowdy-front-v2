@@ -1,0 +1,96 @@
+@media screen and (orientation:landscape) {
+    
+    .instrumentalness>div{
+        width: 90%;
+        height: 25%;
+        background-color: #52B5AA;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        padding: 2.5%;
+    }
+
+    .instrumentalness>div>label{
+        width: 20%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: #94D1CB;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+    }
+
+    .instrumentalness>div>label>.ant-radio-button{
+        display: none;
+    }
+
+    .instrumentalness>div>label>span{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+    }
+
+    .instrumentalness>div>label>span>img{
+        width: 27%;
+        max-height: 90%;
+    }
+
+    .instrumentalness .ant-radio-button-wrapper-checked{
+        background-color: #F4FFFE;
+    }
+
+
+}
+
+@media screen and (orientation:portrait) {
+ 
+    .instrumentalness>div{
+        width: 95%;
+        height: 25%;
+        background-color: #52B5AA;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10px;
+        padding: 2.5%;
+    }
+
+    .instrumentalness>div>label{
+        width: 20%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: #94D1CB;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+    }
+
+    .instrumentalness>div>label>.ant-radio-button{
+        display: none;
+    }
+
+    .instrumentalness>div>label>span{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+    }
+
+    .instrumentalness>div>label>span>img{
+        width: 27%;
+        max-height: 90%;
+    }
+
+    .instrumentalness .ant-radio-button-wrapper-checked{
+        background-color: #F4FFFE;
+    }
+
+
+
+}

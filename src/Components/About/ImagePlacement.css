@@ -1,0 +1,70 @@
+.Loulou{
+    width: 12.5vw;
+    height: 12.5vw;
+    border-radius: 50%;
+    grid-column-start: 5;
+    grid-row-start: 3;
+    transform: translate(5vw,23vw);
+    transition: 0.3s ease-in-out;
+}
+
+.Greg{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    transform: translate(15vw,15vw);
+    transition: 0.3s ease-in-out;
+}
+
+.Flow{
+    width: 7.5vw;
+    height: 7.5vw;
+    border-radius: 50%;
+    grid-column-start: 7;
+    grid-row-start: 2;
+    transform: translate(6vw,13.75vw);
+    transition: 0.3s ease-in-out;
+}
+
+.Lenaze{
+    width: 7.5vw;
+    height: 7.5vw;
+    border-radius: 50%;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    transform: translate(-7vw,7vw);
+    transition: 0.3s ease-in-out;
+}
+
+.Oscar{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    grid-column-start: 6;
+    grid-row-start: 5;
+    transform: translate(7.5vw,-8vw);
+    transition: 0.3s ease-in-out;
+}
+
+.Lancelot{
+    width: 7.5vw;
+    height: 7.5vw;
+    border-radius: 50%;
+    grid-column-start: 4;
+    grid-row-start: 6;
+    transform: translate(12vw,-3.25vw);
+    transition: 0.3s ease-in-out;
+}
+
+.Kylian{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    grid-column-start: 2;
+    grid-row-start: 7;
+    transform: translate(17.5vw,7.5vw);
+    transition: 0.3s ease-in-out;
+}
+

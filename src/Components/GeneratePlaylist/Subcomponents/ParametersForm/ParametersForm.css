@@ -1,0 +1,361 @@
+@media screen and (orientation:landscape) {
+    
+    .parameters-container{
+        display: flex;
+        height: 80vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .energy-popularity-tempo{
+        width: 90%;
+        height: 55%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .instrumentalness-liveness{
+        width: 90%;
+        height: 35%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .energy,.tempo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: 100%;
+        
+        
+    }
+
+    .energy>div, .tempo>div{
+        background-color: #92D1CB;
+        border-radius: 50%;
+    }
+
+    .energy *,.tempo *{
+        overflow: visible;
+        text-align: center;
+    }
+
+    .popularity{
+        width: 20%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .popularity-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+        padding: 5% 0;
+    }
+
+    .popularity-container>span *{
+        background-color: #4CB5AA;
+        border: none;
+    }
+
+    .popularity-container>span{
+        overflow: visible;
+        width: 40%;
+        height: 70%;
+    }
+
+    .popularity-container .MuiSlider-thumb{
+        display: none;
+    }
+
+    .popularity-container h3{
+        font-size: 2vh;
+        color: #4CB5AA;
+        font-weight: 300;
+    }
+
+    .instrumentalness{
+        width: 55%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        
+    }
+
+    .liveness{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .liveness>.liveness-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        overflow: visible;
+    }
+
+    .liveness-container>.liveness-button-container{
+        width: 25%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .liveness-button-container>span{
+        font-size: 1.6vh;
+        font-weight: 200;
+        color: #4CB5AA;
+    }
+
+    .liveness-button-container>div{
+        background-color: #4CB5AA;
+        border: #92D1CB 3px solid;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2vw;
+        height: 2vw;
+        transition: 0.3s;
+    }
+
+    .liveness-button-container>div:hover{
+        transform: scale(1.2);
+        transition: 0.2s;
+    }
+
+    .liveness-button-container>div>span{
+        text-align: center;
+        color: #ffffff;
+        font-weight: 200;
+        font-size: 1.6vh;
+        width: 50%;
+    }
+
+    
+    .liveness-container>.liveness-value-container{
+        width: 9vw;
+        height: 9vw;
+        background-color: #4CB5AA;
+        border: #92D1CB 5px solid;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .liveness-container>.liveness-value-container>span{
+        text-align: center;
+        color: #ffffff;
+        font-weight: 200;
+        font-size: 2.4vh;
+        width: 50%;
+    }
+
+    
+
+
+
+
+}
+
+@media screen and (orientation:portrait) {
+    
+
+    .parameters-container{
+        display: flex;
+        height: 150vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .energy-popularity-tempo{
+        width: 90%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .instrumentalness-liveness{
+        width: 90%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .energy,.tempo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+        
+        
+    }
+
+    .energy>div, .tempo>div{
+        background-color: #92D1CB;
+        border-radius: 50%;
+    }
+
+    .energy *, .tempo *{
+        overflow: visible;
+        text-align: center;
+        
+    }
+
+    .popularity{
+        width: 80%;
+        height: 10%;
+        overflow: visible;
+    }
+
+
+    .popularity-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+    }
+
+    .popularity-container>span *{
+        background-color: #4CB5AA;
+        border: none;
+    }
+
+    .popularity-container>span{
+        overflow: visible;
+        width: 60%;
+        height: 40%;
+        border-radius: 6px;
+    }
+
+    .popularity-container .MuiSlider-thumb{
+        display: none;
+    }
+
+    .popularity-container h3{
+        font-size: 2vh;
+        color: #4CB5AA;
+        font-weight: 300;
+    }
+
+    .instrumentalness{
+        width: 100%;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        
+    }
+
+    .liveness{
+        width: 100%;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+    }
+
+    .liveness>.liveness-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        overflow: visible;
+    }
+
+    .liveness-container>.liveness-button-container{
+        width: 25%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .liveness-button-container>span{
+        font-size: 1.6vh;
+        font-weight: 200;
+        color: #4CB5AA;
+    }
+
+    .liveness-button-container>div{
+        background-color: #4CB5AA;
+        border: #92D1CB 3px solid;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3vh;
+        height: 3vh;
+        transition: 0.3s;
+    }
+
+    .liveness-button-container>div:hover{
+        transform: scale(1.2);
+        transition: 0.2s;
+    }
+
+    .liveness-button-container>div>span{
+        text-align: center;
+        color: #ffffff;
+        font-weight: 200;
+        font-size: 1.6vh;
+        width: 50%;
+    }
+
+    
+    .liveness-container>.liveness-value-container{
+        width: 10vh;
+        height: 10vh;
+        background-color: #4CB5AA;
+        border: #92D1CB 5px solid;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .liveness-container>.liveness-value-container>span{
+        text-align: center;
+        color: #ffffff;
+        font-weight: 200;
+        font-size: 2.4vh;
+        width: 50%;
+    }
+
+}

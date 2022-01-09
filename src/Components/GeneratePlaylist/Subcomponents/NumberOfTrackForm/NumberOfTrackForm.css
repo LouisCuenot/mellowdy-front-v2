@@ -1,0 +1,23 @@
+   
+.number-of-track-container{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.number-of-track-container>p{
+    color: var(--textcolor);
+    font-size: 1.5vh;
+    text-align: center;
+}
+.number-of-track-container>span{
+    overflow-x: visible;
+}
+.number-of-track-container>span *{
+    background-color: #4CB5AA;
+    border: none;
+}
+
+
+
