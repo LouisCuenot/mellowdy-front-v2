@@ -10,16 +10,16 @@ function GeneratePlaylist() {
 
   
 
-  const [artist,setArtist]=useState('')
-  const [track, setTrack]=useState('')
+  let [artist,setArtist]=useState('')
+  let [track, setTrack]=useState('')
 
-  const [getnbtrack,setGetnbtrack]=useState(30)
+  let [getnbtrack,setGetnbtrack]=useState(30)
 
-  const [getEnergy,setGetEnergy]=useState(60)
-  const [getTempo,setGetTempo]=useState(120)
-  const [getPopularity,setGetPopularity]=useState(30)
-  const [getInstrumentalness,setGetInstrumentalness] = useState(0.5)
-  const [getLiveness,setGetLiveness] = useState(0.7)
+  let [getEnergy,setGetEnergy]=useState(60)
+  let [getTempo,setGetTempo]=useState(120)
+  let [getPopularity,setGetPopularity]=useState(30)
+  let [getInstrumentalness,setGetInstrumentalness] = useState(0.5)
+  let [getLiveness,setGetLiveness] = useState(0.7)
 
 
   let submitValues = ()=>{
