@@ -143,7 +143,7 @@ function ParametersForm(props){
                         <h3>{frstH3}</h3>
                         <Slider
                             size="medium"
-                            
+                            defaultValue={30}
                             min={1}
                             max={60} 
                             orientation={sliderOrientation} 

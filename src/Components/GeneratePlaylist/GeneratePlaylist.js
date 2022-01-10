@@ -13,7 +13,7 @@ function GeneratePlaylist() {
   const [artist,setArtist]=useState('')
   const [track, setTrack]=useState('')
 
-  const [getnbtrack,setGetnbtrack]=useState('30')
+  const [getnbtrack,setGetnbtrack]=useState(30)
 
   const [getEnergy,setGetEnergy]=useState(60)
   const [getTempo,setGetTempo]=useState(120)
