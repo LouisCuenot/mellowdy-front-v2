@@ -4,8 +4,7 @@ import GeneratePlaylist from './Components/GeneratePlaylist/GeneratePlaylist';
 import Homepage from './Components/Homepage/Homepage';
 import About from './Components/About/About';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Navbar from './Components/Navbar/Navbar';
-import frontToken from './Components/frontToken';
+import Navbar from './Components/Navbar/Navbar';  
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
               <Route path="/" element={<Homepage />}/>
               <Route path="/about" element={<About />}/>
               <Route path='/generate-playlist' element={<GeneratePlaylist/>}/>
-              <Route path='/frontToken' element={<frontToken/>}/>
           </Routes>
         </div>
     </Router>
