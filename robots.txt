@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
-https://mellowdy.fr/my_sitemap.xml
+sitemap : https://mellowdy.fr/my_sitemap.xml
 User-agent: *
 Disallow:
