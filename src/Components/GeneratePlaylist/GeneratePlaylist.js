@@ -23,7 +23,7 @@ function GeneratePlaylist() {
 
 
   let submitValues = ()=>{
-    if(artist !== null && track !== null){
+    if(artist !== '' && track !== ''){
       const route = 'https://mellow-dy.tinker.ovh/'
       alert('Check your spotify accout, your playlist has been created')
     axios({
