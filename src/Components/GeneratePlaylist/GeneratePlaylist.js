@@ -25,12 +25,20 @@ function GeneratePlaylist() {
   let submitValues = ()=>{
     if(artist !== '' && track !== ''){
       const route = 'https://mellow-dy.tinker.ovh/'
-      alert('Check your spotify account, your playlist has been created')
+      
     axios({
           method: 'post',
           url: route + '?artist='+ artist + '&track='+track+'&limit='+getnbtrack+'&popularity='+getPopularity+'&liveness='+getLiveness+'&tempo='+getTempo+'&instrumentalness='+getInstrumentalness+'&energy='+getEnergy,
           headers: { Authorization: `Bearer ${window.localStorage.getItem('FrontToken')}`}
+        }).then((response)=>{
+          console.log('response :', response)
+        }).catch((e)=>{
+          console.log('error :', e)
+        }).then(()=>{
+          alert('Check your spotify account, your playlist has been created')
         })
+
+        
       }
   }
 
