@@ -127,7 +127,7 @@ const teamMembers = [
     <div className="About">
       <div className='titleAbout'>
         <h1>About us</h1>
-        <p>Our team was composed of seven students in their third year of the Hetic school, from the Grande Ecole program. We had to create a service application using an api during a week-long Full Stack project. For our team, it will be the api of spotify which will hold our attention, we thus created with this last one a musical application. Our concept is to find you a music playlist based on your mood, and the few criteria you have entered.</p>
+        <p>Our team was composed of seven students in their third year of the Hetic school. Our concept is to find you a music playlist based on your mood, and the few criteria you have entered.</p>
         <h2>Getting to know us through music ?</h2>
       </div>
       <div className='bubbles-grid'>

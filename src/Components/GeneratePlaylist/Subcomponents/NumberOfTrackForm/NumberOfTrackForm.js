@@ -6,7 +6,7 @@ import './NumberOfTrackForm.css'
 
 function NumberOfTrackForm(props){
 
-    const [nbtrack,setNbtrack] = useState('30')
+    const [nbtrack,setNbtrack] = useState(30)
 
     
 

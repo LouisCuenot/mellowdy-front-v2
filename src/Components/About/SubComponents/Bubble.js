@@ -37,7 +37,7 @@ function Bubble(props) {
       <div className='bubble-infos'>
             <h2 className='teammate-name'>{props.teamMember.name}</h2>
             <p className='teammate-position'>{props.teamMember.skills}</p>
-            <h3 className='teammate-musical-description'>My musical description</h3>
+            <h3 className='teammate-musical-description'>My Mellowdy's playlist</h3>
             <div className='music-player-container'>
                 <img src={nexttrackicon} onClick={previousTrack} className='next-button'/>
                 <img src={playicon} onClick={browseTrack} className='play-button'/>

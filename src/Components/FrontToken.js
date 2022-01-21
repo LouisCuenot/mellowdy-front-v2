@@ -2,11 +2,11 @@ import React, { useState } from "react"
 import axios from "axios"; 
 
 
-function frontToken(){
+function FrontToken(){
     const queryParam = new URLSearchParams(window.location.search)
     const frontToken = queryParam.get('token')
     localStorage.setItem('FrontToken', frontToken == null ? "error" : frontToken) 
-    window.location.replace('https://pedantic-booth-c38e89.netlify.app/create-playlist')
+    window.location.replace('https://mellowdy.fr/generate-playlist')
     const route = 'https://mellow-dy.tinker.ovh/'
     axios({ method: 'post', url: route, headers: { Authorization: `Bearer ${window.localStorage.getItem('FrontToken')}` } })
 
@@ -14,4 +14,4 @@ function frontToken(){
         <div>There's nothing here 😳</div>
     )
 }
-export default frontToken  
+export default FrontToken;  

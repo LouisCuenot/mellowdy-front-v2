@@ -35,7 +35,7 @@
     }
 
     .maintext>h3{
-        font-size: 2vh;
+        font-size: 3vh;
         font-weight: 300;
         color: var(--textcolor);
     }
@@ -112,7 +112,7 @@
     }
 
     .maintext>h3{
-        font-size: 2vw;
+        font-size: 4vw;
         font-weight: 300;
         color: var(--textcolor);
     }
