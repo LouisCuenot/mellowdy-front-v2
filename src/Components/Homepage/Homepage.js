@@ -10,7 +10,7 @@ function Homepage() {
           <h3>Let the music take you away</h3>
           <a href="https://mellow-dy.tinker.ovh/oauth" className="button">Get started</a>
       </div>
-      <img src={imghomepage} alt="A women listening music" className="imghomepage"/>
+      
 
     </div>
   );
