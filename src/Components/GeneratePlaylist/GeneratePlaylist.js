@@ -35,7 +35,7 @@ function GeneratePlaylist() {
         }).catch((e)=>{
           console.log('error :', e)
         }).then(()=>{
-          alert('Check your spotify account, your playlist has been created')
+          alert('Check your spotify account, your playlist has been created !')
         })
 
         
