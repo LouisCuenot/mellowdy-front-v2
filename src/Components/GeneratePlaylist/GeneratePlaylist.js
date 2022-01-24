@@ -46,7 +46,7 @@ function GeneratePlaylist() {
   return (
     <div className="GeneratePlaylist">
       
-      <form>
+      <div className='Form'>
 
         <div className='wlcm-user-container'>
           <h2>Hey <span>You</span>,</h2>
@@ -74,7 +74,7 @@ function GeneratePlaylist() {
           <button onClick={submitValues}>Generate your playlist</button>
         </div>
 
-      </form>
+      </div>
     </div>
   );
 }

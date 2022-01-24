@@ -7,7 +7,7 @@
     overflow-x: hidden;
 }
 
-form{
+.Form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@ form{
     height: 90%;  
 }
 
-form>div:not(.wlcm-user-container,.submit-button-container){
+.Form>div:not(.wlcm-user-container,.submit-button-container){
     width: 90%;
     background-color: var(--divcolor);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
