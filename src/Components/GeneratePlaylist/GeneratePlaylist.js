@@ -40,6 +40,8 @@ function GeneratePlaylist() {
         })
 
         
+      }else{
+        alert('Please make sure to fill every parameters !')
       }
   }
 
