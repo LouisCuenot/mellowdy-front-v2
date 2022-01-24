@@ -69,7 +69,7 @@ function GeneratePlaylist() {
         />
 
         <div className='submit-button-container'>
-          <input type='submit' placeholder='Generate playlist' onSubmit={submitValues} />
+          <button onClick={submitValues}>Generate your playlist</button>
         </div>
 
       </form>
