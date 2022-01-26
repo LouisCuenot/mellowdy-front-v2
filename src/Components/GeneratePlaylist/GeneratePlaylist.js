@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useNavigate } from 'react-router';
 import axios from 'axios';
 
 import './GeneratePlaylist.css'
@@ -8,7 +9,7 @@ import ParametersForm from './Subcomponents/ParametersForm/ParametersForm';
 
 function GeneratePlaylist() {
 
-  
+ const navigate = useNavigate()
 
   const [artist,setArtist]=useState('')
   const [track, setTrack]=useState('')
@@ -30,22 +31,24 @@ function GeneratePlaylist() {
           method: 'post',
           url: route + '?artist='+ artist + '&track='+track+'&limit='+getnbtrack+'&popularity='+getPopularity+'&liveness='+getLiveness+'&tempo='+getTempo+'&instrumentalness='+getInstrumentalness+'&energy='+getEnergy,
           headers: { Authorization: `Bearer ${window.localStorage.getItem('FrontToken')}`}
-        }).then((response)=>{
-          console.log('response :', response)
-        }).catch((e)=>{
-          console.log('error :', e)
         }).then(()=>{
-          alert('Check your spotify account, your playlist has been created')
+          console.log('sossurr')
+          navigate('/playlist-generated')
+        }).catch(()=>{
+          console.log('soossur')
+          navigate('/error')
         })
 
         
+      }else{
+        window.alert('Please make sure to fill every parameters !')
       }
   }
 
   return (
     <div className="GeneratePlaylist">
       
-      <form>
+      <div className='Form'>
 
         <div className='wlcm-user-container'>
           <h2>Hey <span>You</span>,</h2>
@@ -70,10 +73,10 @@ function GeneratePlaylist() {
         />
 
         <div className='submit-button-container'>
-          <input type='submit' placeholder='Generate playlist' onClick={submitValues} />
+          <button onClick={submitValues}>Generate your playlist</button>
         </div>
 
-      </form>
+      </div>
     </div>
   );
 }

@@ -17,17 +17,18 @@
         grid-row-end: 5;
         min-width:30%;
         width: fit-content;
-        
         height: 100%;
         display:flex;
         flex-direction: column;
         justify-content: space-between;
+        z-index: 2;
     }
 
     .maintext>h2{
         font-size: 4vh;
         font-weight: bold;
         color: var(--textcolor);
+        
     }
 
     .maintext>h2>span{
@@ -35,7 +36,7 @@
     }
 
     .maintext>h3{
-        font-size: 3vh;
+        font-size: 2vh;
         font-weight: 300;
         color: var(--textcolor);
     }
@@ -71,6 +72,11 @@
         max-width: 60vw;
         justify-self: end;
         align-self: end;
+        z-index: 2;
+    }
+
+    div:nth-child(2){
+        grid-area: 1/1/6/6;
     }
 
 }
@@ -98,6 +104,7 @@
         display:flex;
         flex-direction: column;
         justify-content: space-between;
+        z-index: 2;
     }
 
 
@@ -112,7 +119,7 @@
     }
 
     .maintext>h3{
-        font-size: 4vw;
+        font-size: 2vw;
         font-weight: 300;
         color: var(--textcolor);
     }
@@ -145,5 +152,10 @@
         max-height: 120%;
         justify-self: end;
         align-self: end;
+        z-index: 2;
+    }
+
+    div:nth-child(2){
+        grid-area: 1/1/6/4;
     }
 }

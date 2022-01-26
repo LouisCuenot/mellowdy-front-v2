@@ -17,5 +17,13 @@
 .App{
   background-color: var(--bgbody);
   transition: 0.3s ease;
+  
+}
+
+html,
+body,
+#root{
+  width: 100vw;
+  height: 100vh;
 }
 

@@ -1,0 +1,155 @@
+@media screen and (orientation:landscape) {
+    
+
+
+    .gridError{
+        width: 100vw;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 20vw 1fr 20vw;
+        grid-template-rows: 20vh 1fr 20vh;
+    }
+
+    .errorInfo{
+        grid-area: 2/2/3/3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .errorInfo>img{
+        width: 50%;
+        max-height: 100%;
+    }
+
+    .errorInfo>div{
+        width: 40%;
+        height: 30%;
+        min-height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .errorInfo>div>h2{
+        width: 100%;
+        font-size: 3.5vh;
+        color: var(--textcolor);
+        font-weight: bold;
+    }
+
+    .errorInfo>div>h2>span{
+        color: #4CB5AA;
+    }
+
+    .errorInfo>div>p{
+        font-size: 2.5vh;
+        font-weight: 300;
+        color: var(--textcolor);
+    }
+
+    .retryButton{
+        grid-area: 3/2/4/3;
+        width: 25%;
+        height: 25%;
+        justify-self: center;
+        background-color: #4CB5AA;
+        color: #ffffff;
+        border-radius: 15px;
+        border: none;
+        font-size: 17px;
+        transition: 0.2s;
+        z-index: 2;
+    }
+
+    .retryButton:hover{
+        transform: scale(1.15);
+        transition: 0.2s;
+    }
+
+    .canva{
+        width: 100%;
+        height: 100%;
+        grid-area: 1/1/4/4;
+    }
+
+}
+
+@media screen and (orientation:portrait) {
+    
+    .gridError{
+        width: 100vw;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 20vw 1fr 20vw;
+        grid-template-rows: 20vh 1fr 20vh;
+    }
+
+    .errorInfo{
+        grid-area: 2/2/3/3;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .errorInfo>img{
+        height: 50%;
+        max-width: 100%;
+    }
+
+    .errorInfo>div{
+        width: 100%;
+        height: 30%;
+        min-height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .errorInfo>div>h2{
+        width: 100%;
+        font-size: 3vh;
+        color: var(--textcolor);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .errorInfo>div>h2>span{
+        color: #4CB5AA;
+    }
+
+    .errorInfo>div>p{
+        font-size: 2vh;
+        font-weight: 300;
+        color: var(--textcolor);
+        text-align: center;
+    }
+
+    .retryButton{
+        grid-area: 3/2/4/3;
+        width: 70%;
+        height: 25%;
+        justify-self: center;
+        background-color: #4CB5AA;
+        color: #ffffff;
+        border-radius: 15px;
+        border: none;
+        font-size: 17px;
+        transition: 0.2s;
+        z-index: 2;
+    }
+
+    .retryButton:hover{
+        transform: scale(1.15);
+        transition: 0.2s;
+    }
+
+    .canva{
+        width: 100%;
+        height: 100%;
+        grid-area: 1/1/4/4;
+    }
+}

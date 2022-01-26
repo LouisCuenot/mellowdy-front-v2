@@ -1,4 +1,4 @@
-
+import BackgroundThree from './Subcomponents/BackgroundThree'
 import './Homepage.css'
 import imghomepage from "../../img/Homepage/img_Homepage.png";
 
@@ -11,7 +11,7 @@ function Homepage() {
           <a href="https://mellow-dy.tinker.ovh/oauth" className="button">Get started</a>
       </div>
       
-
+      <BackgroundThree className='sossur'/>
     </div>
   );
 }
