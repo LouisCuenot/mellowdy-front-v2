@@ -162,6 +162,7 @@
         transition: 0.5s ease-in-out;
         border-top: 4px solid #4CB5AA;
         border-bottom: 4px solid #4CB5AA;
+        z-index: 2;
     }
 
     #menu a{
