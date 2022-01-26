@@ -1,6 +1,7 @@
 import React, { Suspense, useRef } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { useGLTF, PerspectiveCamera } from "@react-three/drei";
+import { useNavigate } from "react-router";
 import './Error.css'
 
 import imgError from '../../../img/Confirmation/Error.svg'
@@ -106,6 +107,12 @@ function Camera(props){
 
 function Error(){
 
+    let navigate = useNavigate()
+
+    let Retry = ()=>{
+      navigate('/generate-playlist')
+    }
+
     let modelstable = []
 
     for(let i=0; i<50;i++){
@@ -135,7 +142,8 @@ function Error(){
             <p>Make sure you used right parameters</p>
           </div>
         </div>
-        <Canvas>
+        <button className="retryButton" onClick={Retry}>Try again</button>
+        <Canvas className="canva">
             <ambientLight color="white" intensity={0.6} />
             <pointLight position={[10, 10, 10]} />
             

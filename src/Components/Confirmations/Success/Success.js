@@ -1,6 +1,7 @@
 import React, { Suspense, useRef } from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { useGLTF, PerspectiveCamera } from "@react-three/drei";
+import { useNavigate } from "react-router";
 import './Success.css'
 
 import imgSuccess from '../../../img/Confirmation/Success.svg'
@@ -106,6 +107,12 @@ function Camera(props){
 
 function Success(){
 
+   let navigate = useNavigate()
+
+   let Retry = ()=>{
+     navigate('/generate-playlist')
+   }
+
     let modelstable = []
 
     for(let i=0; i<50;i++){
@@ -132,7 +139,8 @@ function Success(){
           <img src={imgSuccess} />
           <h2>Your playlist has been <span>successfully</span> created !</h2>
         </div>
-        <Canvas>
+        <button className="retryButtonSuccess" onClick={Retry}>Generate another playlist</button>
+        <Canvas className="canvaSuccess">
             <ambientLight color="white" intensity={0.6} />
             <pointLight position={[10, 10, 10]} />
             

@@ -34,6 +34,31 @@
         color: #4CB5AA;
     }
 
+    .retryButtonSuccess{
+        grid-area: 3/2/4/3;
+        width: 25%;
+        height: 25%;
+        justify-self: center;
+        background-color: #4CB5AA;
+        color: #ffffff;
+        border-radius: 15px;
+        border: none;
+        font-size: 17px;
+        transition: 0.2s;
+        z-index: 2;
+    }
+
+    .retryButtonSuccess:hover{
+        transform: scale(1.15);
+        transition: 0.2s;
+    }
+
+    .canvaSuccess{
+        width: 100%;
+        height: 100%;
+        grid-area: 1/1/4/4;
+    }
+
 }
 
 @media screen and (orientation:portrait) {
@@ -72,5 +97,29 @@
         color: #4CB5AA;
     }
 
+    .retryButtonSuccess{
+        grid-area: 3/2/4/3;
+        width: 70%;
+        height: 25%;
+        justify-self: center;
+        background-color: #4CB5AA;
+        color: #ffffff;
+        border-radius: 15px;
+        border: none;
+        font-size: 17px;
+        transition: 0.2s;
+        z-index: 2;
+    }
+
+    .retryButtonSuccess:hover{
+        transform: scale(1.15);
+        transition: 0.2s;
+    }
+
+    .canvaSuccess{
+        width: 100%;
+        height: 100%;
+        grid-area: 1/1/4/4;
+    }
 
 }
