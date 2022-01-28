@@ -32,10 +32,8 @@ function GeneratePlaylist() {
           url: route + '?artist='+ artist + '&track='+track+'&limit='+getnbtrack+'&popularity='+getPopularity+'&liveness='+getLiveness+'&tempo='+getTempo+'&instrumentalness='+getInstrumentalness+'&energy='+getEnergy,
           headers: { Authorization: `Bearer ${window.localStorage.getItem('FrontToken')}`}
         }).then(()=>{
-          console.log('sossurr')
           navigate('/playlist-generated')
         }).catch(()=>{
-          console.log('soossur')
           navigate('/error')
         })
 
