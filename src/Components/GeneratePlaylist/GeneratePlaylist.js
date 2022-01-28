@@ -20,7 +20,7 @@ function GeneratePlaylist() {
   const [getTempo,setGetTempo]=useState(120)
   const [getPopularity,setGetPopularity]=useState(30)
   const [getInstrumentalness,setGetInstrumentalness] = useState(0.5)
-  const [getLiveness,setGetLiveness] = useState(0.7)
+  const [getLiveness,setGetLiveness] = useState(0.3)
 
 
   let submitValues = ()=>{
