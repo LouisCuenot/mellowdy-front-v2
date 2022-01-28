@@ -81,7 +81,7 @@ function ParametersForm(props){
         }
     }
 
-    let energyConvertor=0.25;
+    let energyConvertor=75;
     
     
 
@@ -125,6 +125,7 @@ function ParametersForm(props){
                         knobPosition='left'
                         label='Energy'
                         data={["Low music","Normal","SHEEEEEEESH","BANGER MA BOII"]}
+                        dataIndex={2}
                         labelColor="#ffffff"
                         trackColor='#92D1CB'
                         progressColorFrom='#4CB5AA'
