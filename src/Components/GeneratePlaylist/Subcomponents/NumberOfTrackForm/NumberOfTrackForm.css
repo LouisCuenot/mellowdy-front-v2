@@ -19,5 +19,9 @@
     border: none;
 }
 
+.number-of-track-container>span>span::before,.number-of-track-container>span>span::after{
+    display: none;
+}
+
 
 

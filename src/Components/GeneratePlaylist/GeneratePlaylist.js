@@ -20,7 +20,7 @@ function GeneratePlaylist() {
   const [getTempo,setGetTempo]=useState(120)
   const [getPopularity,setGetPopularity]=useState(30)
   const [getInstrumentalness,setGetInstrumentalness] = useState(0.5)
-  const [getLiveness,setGetLiveness] = useState(0.7)
+  const [getLiveness,setGetLiveness] = useState(0.3)
 
 
   let submitValues = ()=>{
@@ -32,10 +32,8 @@ function GeneratePlaylist() {
           url: route + '?artist='+ artist + '&track='+track+'&limit='+getnbtrack+'&popularity='+getPopularity+'&liveness='+getLiveness+'&tempo='+getTempo+'&instrumentalness='+getInstrumentalness+'&energy='+getEnergy,
           headers: { Authorization: `Bearer ${window.localStorage.getItem('FrontToken')}`}
         }).then(()=>{
-          console.log('sossurr')
           navigate('/playlist-generated')
         }).catch(()=>{
-          console.log('soossur')
           navigate('/error')
         })
 

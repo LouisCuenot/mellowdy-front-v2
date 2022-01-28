@@ -58,7 +58,7 @@ function ParametersForm(props){
     })  
 
     let livenessValue;
-    const [livenessAmount,setLivenessAmount] = useState(0.7)
+    const [livenessAmount,setLivenessAmount] = useState(0.4)
     livenessValue=livenessAmount
 
     let livenessDown = ()=>{
@@ -81,7 +81,7 @@ function ParametersForm(props){
         }
     }
 
-    let energyConvertor=0.25;
+    let energyConvertor=75;
     
     
 
@@ -125,6 +125,7 @@ function ParametersForm(props){
                         knobPosition='left'
                         label='Energy'
                         data={["Low music","Normal","SHEEEEEEESH","BANGER MA BOII"]}
+                        dataIndex={2}
                         labelColor="#ffffff"
                         trackColor='#92D1CB'
                         progressColorFrom='#4CB5AA'
@@ -143,7 +144,7 @@ function ParametersForm(props){
                         <h3>{frstH3}</h3>
                         <Slider
                             size="medium"
-                            defaultValue={30}
+                            defaultValue={50}
                             min={1}
                             max={60} 
                             orientation={sliderOrientation} 
