@@ -106,14 +106,14 @@ function BackgroundThree(){
 
     let modelstable = []
 
-    for(let i=0; i<50;i++){
+    for(let i=0; i<150;i++){
         modelstable[i] = {
           id:i,
-          x:(Math.random()-0.5)*28,
-          y:(Math.random()-0.5)*14,
-          z:(Math.random()-2)*3,
+          x:(Math.random()-0.5)*30,
+          y:(Math.random()-0.63)*14,
+          z:(Math.random()-2)*4,
           type:Math.round(Math.random()*6-0.5),
-          rotation:{x:Math.random()/3,y:Math.random()*Math.PI*2,z:Math.random()/3},
+          rotation:{x:Math.random()/4,y:Math.random()*Math.PI*2,z:Math.random()/4},
           scale:Math.random()/4
         }
         
