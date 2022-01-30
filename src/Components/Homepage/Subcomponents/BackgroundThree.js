@@ -1,5 +1,5 @@
 import React, { Suspense, useRef } from "react";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useGLTF, PerspectiveCamera } from "@react-three/drei";
 import "./BackgroundThree.css"
 
@@ -15,6 +15,10 @@ const sizes = {
 
 
   function Model(props){
+
+    const { gl, viewport } = useThree()
+
+    gl.setPixelRatio(window.devicePixelRatio)
     
     const mesh = useRef()
 
@@ -103,6 +107,8 @@ function Camera(props){
   
 
 function BackgroundThree(){
+
+    
 
     let modelstable = []
 
