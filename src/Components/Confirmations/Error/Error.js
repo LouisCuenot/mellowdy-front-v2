@@ -1,5 +1,5 @@
 import React, { Suspense, useRef } from "react";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useGLTF, PerspectiveCamera } from "@react-three/drei";
 import { useNavigate } from "react-router";
 import './Error.css'
@@ -18,6 +18,10 @@ const sizes = {
   }
 
   function Model(props){
+
+    const { gl, viewport } = useThree()
+
+    gl.setPixelRatio(window.devicePixelRatio)
     
     const mesh = useRef()
 
